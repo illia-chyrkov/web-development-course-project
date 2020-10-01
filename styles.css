@@ -44,7 +44,13 @@ img {
 
   animation: fadeIn 1s ease;
 
+  color: #fff;
   background: #2f2f2f;
+}
+
+.banner.banner--white {
+  color: #000;
+  background: #fff;
 }
 
 .banner__title {
@@ -61,8 +67,6 @@ img {
 
 .banner__text {
   margin: 50px 0 40px;
-
-  color: #fff;
 
   font-size: 30px;
   font-weight: bold;
@@ -86,6 +90,14 @@ img {
 .banner__button:hover {
   background: #ffe07f;
 }
+
+/* .popup {
+  display: none;
+}
+
+.popup.active {
+  display: block;
+} */
 
 @media screen and (max-width: 768px) {
   .banner__title {
