@@ -8,69 +8,93 @@
     <link rel="stylesheet" href="fonts/stylesheet.css" />
   </head>
   <body>
-    <!-- Что бы сделать баннер белым необходимо добавить класс banner--white -->
-    nav.nav>a*4[href="$.html"]{Ссылка $}
-    <nav class="nav">
-      <a href="1.html">Ссылка 1</a>
-      <a href="2.html">Ссылка 2</a>
-      <a href="3.html">Ссылка 3</a>
-      <a href="4.html">Ссылка 4</a>
-    </nav>
-    <section class="banner">
-      <div class="container">
-        <h1 class="banner__title">Title here 1231231231231</h1>
-        <p class="banner__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-          lacinia odio vitae vestibulum vestibulum.
-        </p>
-        <button class="banner__button">Order Now</button>
+    <!-- first - Start -->
+    <section class="first">
+      <div class="header">
+        <a href="/" class="header__logo">
+          <img src="img/logo.png" alt="" class="header__logo-img" />
+        </a>
+        <nav class="header__nav">
+          <a href="#" class="header__nav-item">Home</a>
+          <a href="#" class="header__nav-item">Product</a>
+          <a href="#" class="header__nav-item">Promo</a>
+          <a href="#" class="header__nav-item">About</a>
+          <a href="#" class="header__nav-item">Contact</a>
+        </nav>
+        <a href="#" class="header__search">
+          <img src="img/search.svg" alt="Search" />
+        </a>
+        <!-- По нажатию необходимо для данного элемента и элемента .header__nav добавлять класс active -->
+        <a href="#" class="header__toggle">
+          <i></i>
+          <i></i>
+          <i></i>
+        </a>
+      </div>
+      <div class="first__row">
+        <div
+          class="first__img"
+          style="background-image: url('img/first-img.jpg')"
+        ></div>
+        <div class="first__content-wrap">
+          <div class="first__content">
+            <h1 class="first__content-title">Title Here</h1>
+            <p class="first__content-descr">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              lacinia odio vitae vestibulum vestibulum.
+            </p>
+            <a href="#" class="button">Order Now</a>
+          </div>
+        </div>
       </div>
     </section>
+    <!-- first - End -->
 
     <!-- best-seller - Start -->
     <section class="best-seller">
-      <h2 class="best-seller__title">Best Seller</h2>
-      <p class="best-seller__descr">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia
-        odio vitae vestibulum vestibulum.
-      </p>
-      <ul class="best-seller__list">
-        <li class="best-seller__item">
-          <img src="img/item.jpg" alt="" class="best-seller__item-img" />
-          <h3 class="best-seller__item-title">Heading 3</h3>
-          <span class="best-seller__item-descr"
-            >Nihil vero in fugit neque corrupti?</span
-          >
-        </li>
-        <li class="best-seller__item">
-          <img src="img/item.jpg" alt="" class="best-seller__item-img" />
-          <h3 class="best-seller__item-title">Heading 3</h3>
-          <span class="best-seller__item-descr"
-            >Nihil vero in fugit neque corrupti?</span
-          >
-        </li>
-        <li class="best-seller__item">
-          <img src="img/item.jpg" alt="" class="best-seller__item-img" />
-          <h3 class="best-seller__item-title">Heading 3</h3>
-          <span class="best-seller__item-descr"
-            >Nihil vero in fugit neque corrupti?</span
-          >
-        </li>
-      </ul>
+      <div class="container">
+        <h3 class="best-seller__title">Best Seller</h3>
+        <p class="best-seller__descr">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          lacinia odio vitae vestibulum vestibulum.
+        </p>
+        <div class="best-seller__list">
+          <div class="best-seller__item">
+            <img
+              src="img/best-seller/1.jpg"
+              alt="Title Here"
+              class="best-seller__item-img"
+            />
+            <h4 class="best-seller__item-title">Title Here</h4>
+            <p class="best-seller__item-descr">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="best-seller__item">
+            <img
+              src="img/best-seller/2.jpg"
+              alt="Title Here"
+              class="best-seller__item-img"
+            />
+            <h4 class="best-seller__item-title">Title Here</h4>
+            <p class="best-seller__item-descr">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="best-seller__item">
+            <img
+              src="img/best-seller/3.jpg"
+              alt="Title Here"
+              class="best-seller__item-img"
+            />
+            <h4 class="best-seller__item-title">Title Here</h4>
+            <p class="best-seller__item-descr">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- best-seller - End -->
-
-    <!--
-    <form action="#" class="form">
-      <label class="form__input-wrap">
-        <span class="form__input-label">Имя</span>
-        <input type="text" class="form__input" placeholder="Введите ваше имя" />
-      </label>
-      <button class="form__button">Send</button>
-    </form>
-    -->
-
-    <!-- Для отображения блока необходимо добавить класс active -->
-    <div class="popup"></div>
   </body>
 </html>
