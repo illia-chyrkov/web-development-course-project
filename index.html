@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="fonts/stylesheet.css"/>
   </head>
   <body>
     <!-- first - Start -->
     <section class="first">
-      <div class="header">
+      <header class="header">
         <a href="/" class="header__logo">
-          <img src="img/logo.png" alt="" class="header__logo-img" />
+          <img src="img/logo.png" alt="" class="header__logo-img"/>
         </a>
         <nav class="header__nav">
           <a href="#" class="header__nav-item">Home</a>
@@ -22,7 +22,7 @@
           <a href="#" class="header__nav-item">Contact</a>
         </nav>
         <a href="#" class="header__search">
-          <img src="img/search.svg" alt="Search" />
+          <img src="img/search.svg" alt="Search"/>
         </a>
         <!-- По нажатию необходимо для данного элемента и элемента .header__nav добавлять класс active -->
         <a href="#" class="header__toggle">
@@ -30,7 +30,7 @@
           <i></i>
           <i></i>
         </a>
-      </div>
+      </header>
       <div class="first__row">
         <div
           class="first__img"
@@ -64,7 +64,7 @@
               src="img/best-seller/1.jpg"
               alt="Title Here"
               class="best-seller__item-img"
-            />
+/>
             <h4 class="best-seller__item-title">Title Here</h4>
             <p class="best-seller__item-descr">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -75,7 +75,7 @@
               src="img/best-seller/2.jpg"
               alt="Title Here"
               class="best-seller__item-img"
-            />
+/>
             <h4 class="best-seller__item-title">Title Here</h4>
             <p class="best-seller__item-descr">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -86,7 +86,7 @@
               src="img/best-seller/3.jpg"
               alt="Title Here"
               class="best-seller__item-img"
-            />
+/>
             <h4 class="best-seller__item-title">Title Here</h4>
             <p class="best-seller__item-descr">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -96,5 +96,67 @@
       </div>
     </section>
     <!-- best-seller - End -->
+
+    <!-- statistics - Start -->
+    <section class="statistics">
+      <div class="container">
+        <div class="product">
+          <img
+            src="img/products/1.jpg"
+            alt="Oriental Taste"
+            class="product__img"
+/>
+          <div class="product__content">
+            <h2 class="product__title">Oriental Taste</h2>
+            <p class="product__descr">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              lacinia odio vitae vestibulum vestibulum.
+            </p>
+            <a href="#" class="button button--large">Order Now</a>
+          </div>
+        </div>
+        <div class="statistics__content">
+          <h2 class="statistics__title">Statistics</h2>
+          <p class="statistics__descr">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            lacinia odio vitae vestibulum vestibulum.
+          </p>
+          <div class="statistics__list">
+            <div class="statistics__item">
+              <span class="statistics__item-title">123</span>
+              <span class="statistics__item-descr">Outlets</span>
+            </div>
+            <div class="statistics__item">
+              <span class="statistics__item-title">100</span>
+              <span class="statistics__item-descr">Chef</span>
+            </div>
+            <div class="statistics__item">
+              <span class="statistics__item-title">300</span>
+              <span class="statistics__item-descr">Menu</span>
+            </div>
+            <div class="statistics__item">
+              <span class="statistics__item-title">30</span>
+              <span class="statistics__item-descr">Country</span>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product__content">
+            <h2 class="product__title">Chicken Grill</h2>
+            <p class="product__descr product__descr--large">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              lacinia odio vitae vestibulum vestibulum.
+            </p>
+            <a href="#" class="button button--large">Order Now</a>
+          </div>
+          <img
+            src="img/products/2.jpg"
+            alt="Oriental Taste"
+            class="product__img"
+/>
+        </div>
+      </div>
+    </section>
+    <!-- statistics - End -->
   </body>
 </html>

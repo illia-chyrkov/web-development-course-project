@@ -69,6 +69,11 @@ p {
   margin: 0;
 }
 
+button,
+input {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
 .container {
   width: 100%;
   max-width: 1170px;
@@ -82,15 +87,29 @@ p {
   min-width: 246px;
   padding: 13px;
 
+  transition: background 0.2s ease-in-out;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
 
   color: #333333;
+  border: 0;
   border-radius: 4px;
   background: #ffc200;
 
   font-size: 19px;
   font-weight: bold;
+}
+
+.button:hover {
+  background: #ffd44c;
+}
+
+.button.button--large {
+  min-width: 320px;
+  padding: 18px;
+
+  font-size: 25px;
 }
 
 @media screen and (max-width: 992px) {
@@ -112,6 +131,13 @@ p {
 
   h4 {
     font-size: 36px;
+  }
+
+  .button.button--large {
+    min-width: 246px;
+    padding: 13px;
+
+    font-size: 19px;
   }
 }
 
@@ -349,7 +375,7 @@ p {
 
 /* best-seller - Start */
 .best-seller {
-  padding: 135px 0 230px;
+  padding: 135px 0 115px;
 
   text-align: center;
 }
@@ -384,7 +410,7 @@ p {
 
 @media screen and (max-width: 992px) {
   .best-seller {
-    padding: 80px 0;
+    padding: 70px 0;
   }
 }
 
@@ -399,3 +425,295 @@ p {
   }
 }
 /* best-seller - End */
+
+/* statistics - Start */
+.statistics {
+  position: relative;
+
+  margin: 115px 0;
+  padding: 90px 0 100px;
+
+  color: #fff;
+  background: #303030;
+  background-image: url("img/statistics-bg.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.statistics .container {
+  position: relative;
+  z-index: 100;
+}
+
+.statistics:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  height: 340px;
+
+  content: "";
+
+  background: url("img/statistics-top.jpg");
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 100% auto;
+}
+
+.statistics:after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  height: 320px;
+
+  content: "";
+
+  background: url("img/statistics-bottom.jpg");
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: 100% auto;
+}
+
+.statistics__content {
+  padding: 175px 0 270px;
+
+  text-align: center;
+}
+
+.statistics__descr {
+  margin-bottom: 60px;
+}
+
+.statistics__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.statistics__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 234px;
+  height: 234px;
+  margin: 25px;
+
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
+.statistics__item-title {
+  display: block;
+
+  text-align: center;
+
+  color: #ffc200;
+
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.statistics__item-descr {
+  display: block;
+
+  text-transform: uppercase;
+
+  font-size: 29px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+  .statistics:before {
+    height: 290px;
+  }
+
+  .statistics:after {
+    height: 270px;
+  }
+
+  .statistics__content {
+    padding: 80px 0 120px;
+  }
+
+  .statistics__list {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .statistics {
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .statistics:before {
+    height: 190px;
+  }
+
+  .statistics:after {
+    height: 180px;
+  }
+
+  .statistics__content {
+    padding: 60px 0 80px;
+  }
+
+  .statistics__descr {
+    margin-bottom: 30px;
+  }
+
+  .statistics__list {
+    max-width: 400px;
+  }
+
+  .statistics__item {
+    width: 125px;
+    height: 125px;
+    margin: 10px;
+  }
+
+  .statistics__item-title {
+    font-size: 32px;
+  }
+
+  .statistics__item-descr {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .statistics:before {
+    height: 140px;
+  }
+
+  .statistics:after {
+    height: 135px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .statistics {
+    padding: 120px 0 130px;
+  }
+
+  .statistics:before {
+    height: 120px;
+  }
+
+  .statistics:after {
+    height: 115px;
+  }
+}
+/* statistics - End */
+
+/* product - Start */
+.product {
+  display: flex;
+  align-items: center;
+}
+
+.product__img {
+  width: 460px;
+  height: 460px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+
+.product__img:first-child {
+  margin-right: 160px;
+}
+
+.product__img:last-child {
+  margin-left: 130px;
+}
+
+.product__content {
+  flex: 1;
+}
+
+.product__title {
+  margin-bottom: 5px;
+}
+
+.product__descr {
+  margin-bottom: 70px;
+}
+
+.product__descr.product__descr--large {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .product__descr {
+    margin-bottom: 40px;
+  }
+
+  .product__descr.product__descr--large {
+    font-size: inherit;
+  }
+
+  .product__img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .product__img:first-child {
+    margin-right: 80px;
+  }
+
+  .product__img:last-child {
+    margin-left: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product__img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .product__img:first-child {
+    margin-right: 35px;
+  }
+
+  .product__img:last-child {
+    margin-left: 35px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .product__img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .product__img:first-child {
+    margin-right: 25px;
+  }
+
+  .product__img:last-child {
+    margin-left: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product {
+    text-align: center;
+  }
+
+  .product__img {
+    display: none;
+  }
+}
+/* product - End */
