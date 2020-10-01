@@ -1,0 +1,36 @@
+div {
+    padding: 50px;
+
+    background: #2f2f2f;
+}
+
+
+h1 {
+    margin: 0;
+
+    color: #ffc200;
+
+    font-family: Impact;
+    font-size: 124px;
+    font-style: italic;
+}
+
+p {
+    margin: 50px 0 40px;
+
+    color: #fff;
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+button {
+    padding: 18px 57px;
+
+    text-transform: uppercase;
+
+    color: #333333;
+    background: #ffc200;
+
+    font-size: 19px;
+}
