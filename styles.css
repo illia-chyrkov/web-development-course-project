@@ -1,8 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
 
-.box {
+div {
   padding: 50px;
 
   background: #2f2f2f;
@@ -18,7 +25,7 @@ h1 {
   font-style: italic;
 }
 
-h2 ~ p {
+p {
   margin: 50px 0 40px;
 
   color: #fff;
@@ -30,22 +37,13 @@ h2 ~ p {
 button {
   padding: 18px 57px;
 
+  -webkit-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
   text-transform: uppercase;
 
   color: #333333;
   background: #ffc200;
 
   font-size: 19px;
-}
-
-button:hover {
-  background: red;
-}
-
-.box p:nth-child(1) {
-  color: red;
-}
-
-.box p:nth-last-child(2) {
-  color: blue;
 }
