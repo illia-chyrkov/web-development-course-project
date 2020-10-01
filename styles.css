@@ -1,48 +1,51 @@
-.box {
-    padding: 50px;
-
-    background: #2f2f2f;
+body {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
 
+.box {
+  padding: 50px;
+
+  background: #2f2f2f;
+}
 
 h1 {
-    margin: 0;
+  margin: 0;
 
-    color: #ffc200;
+  color: #ffc200;
 
-    font-family: Impact;
-    font-size: 124px;
-    font-style: italic;
+  font-family: "Grand Hotel", Helvetica, Arial, sans-serif;
+  font-size: 124px;
+  font-style: italic;
 }
 
 h2 ~ p {
-    margin: 50px 0 40px;
+  margin: 50px 0 40px;
 
-    color: #fff;
+  color: #fff;
 
-    font-size: 30px;
-    font-weight: bold;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 button {
-    padding: 18px 57px;
+  padding: 18px 57px;
 
-    text-transform: uppercase;
+  text-transform: uppercase;
 
-    color: #333333;
-    background: #ffc200;
+  color: #333333;
+  background: #ffc200;
 
-    font-size: 19px;
+  font-size: 19px;
 }
 
 button:hover {
-    background: red;
+  background: red;
 }
 
 .box p:nth-child(1) {
-    color: red;
+  color: red;
 }
 
 .box p:nth-last-child(2) {
-    color: blue;
+  color: blue;
 }
