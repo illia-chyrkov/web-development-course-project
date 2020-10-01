@@ -1,4 +1,4 @@
-div {
+.box {
     padding: 50px;
 
     background: #2f2f2f;
@@ -15,7 +15,7 @@ h1 {
     font-style: italic;
 }
 
-p {
+h2 ~ p {
     margin: 50px 0 40px;
 
     color: #fff;
@@ -33,4 +33,16 @@ button {
     background: #ffc200;
 
     font-size: 19px;
+}
+
+button:hover {
+    background: red;
+}
+
+.box p:nth-child(1) {
+    color: red;
+}
+
+.box p:nth-last-child(2) {
+    color: blue;
 }
