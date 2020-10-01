@@ -91,3 +91,13 @@ body {
   border: 10px solid red;
   background: #000;
 }
+
+.popup {
+  position: fixed;
+  z-index: 100;
+  top: 100px;
+}
+
+.container {
+  position: relative;
+}
