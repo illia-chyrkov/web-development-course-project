@@ -8,15 +8,54 @@
     <link rel="stylesheet" href="fonts/stylesheet.css" />
   </head>
   <body>
-    <div class="banner">
+    <section class="banner">
       <div class="container">
-        <h1 class="banner-title">Title here</h1>
-        <div class="banner-text">
+        <h1 class="banner__title">Title here</h1>
+        <p class="banner__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
           lacinia odio vitae vestibulum vestibulum.
-        </div>
-        <button class="banner-button">Order Now</button>
+        </p>
+        <button class="banner__button">Order Now</button>
       </div>
-    </div>
+    </section>
+
+    <section class="best-seller">
+      <h2 class="best-seller__title">Best Seller</h2>
+      <p class="best-seller__descr">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia
+        odio vitae vestibulum vestibulum.
+      </p>
+      <ul class="best-seller__list">
+        <li class="best-seller__item">
+          <img src="img/item.jpg" alt="" class="best-seller__item-img" />
+          <h3 class="best-seller__item-title">Heading 3</h3>
+          <span class="best-seller__item-descr"
+            >Nihil vero in fugit neque corrupti?</span
+          >
+        </li>
+        <li class="best-seller__item">
+          <img src="img/item.jpg" alt="" class="best-seller__item-img" />
+          <h3 class="best-seller__item-title">Heading 3</h3>
+          <span class="best-seller__item-descr"
+            >Nihil vero in fugit neque corrupti?</span
+          >
+        </li>
+        <li class="best-seller__item">
+          <img src="img/item.jpg" alt="" class="best-seller__item-img" />
+          <h3 class="best-seller__item-title">Heading 3</h3>
+          <span class="best-seller__item-descr"
+            >Nihil vero in fugit neque corrupti?</span
+          >
+        </li>
+      </ul>
+    </section>
+
+    <form action="#" class="form">
+      <label class="form__input-wrap">
+        <span class="form__input-label">Имя</span>
+        <input type="text" class="form__input" placeholder="Введите ваше имя" />
+      </label>
+      <button class="form__button">Send</button>
+    </form>
   </body>
 </html>

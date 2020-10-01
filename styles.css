@@ -47,7 +47,7 @@ img {
   background: #2f2f2f;
 }
 
-.banner-title {
+.banner__title {
   margin: 0;
 
   color: #ffc200;
@@ -59,7 +59,7 @@ img {
   line-height: 1;
 }
 
-.banner-text {
+.banner__text {
   margin: 50px 0 40px;
 
   color: #fff;
@@ -68,7 +68,7 @@ img {
   font-weight: bold;
 }
 
-.banner-button {
+.banner__button {
   padding: 18px 57px;
 
   transition: background 0.2s ease-in-out;
@@ -83,22 +83,22 @@ img {
   font-weight: bold;
 }
 
-.banner-button:hover {
+.banner__button:hover {
   background: #ffe07f;
 }
 
 @media screen and (max-width: 768px) {
-  .banner-title {
+  .banner__title {
     font-size: 60px;
   }
 
-  .banner-text {
+  .banner__text {
     margin: 30px 0 20px;
 
     font-size: 20px;
   }
 
-  .banner-button {
+  .banner__button {
     padding: 12px 30px;
 
     font-size: 14px;
