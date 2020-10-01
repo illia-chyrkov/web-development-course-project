@@ -1,11 +1,16 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 
 body {
+  margin: 0;
+
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
 
@@ -18,6 +23,8 @@ div {
 h1 {
   margin: 0;
 
+  animation: fadeIn 5s ease;
+
   color: #ffc200;
 
   font-family: "Grand Hotel", Helvetica, Arial, sans-serif;
@@ -28,6 +35,10 @@ h1 {
 p {
   margin: 50px 0 40px;
 
+  animation: fadeIn 5s ease;
+  animation-delay: 5s;
+
+  opacity: 0;
   color: #fff;
 
   font-size: 30px;
@@ -37,13 +48,17 @@ p {
 button {
   padding: 18px 57px;
 
-  -webkit-transform: rotate(10deg);
-  -ms-transform: rotate(10deg);
-  transform: rotate(10deg);
+  transition: background 0.5s ease-in-out;
   text-transform: uppercase;
 
   color: #333333;
+  border: 0;
+  outline: none;
   background: #ffc200;
 
   font-size: 19px;
+}
+
+button:hover {
+  background: #ffe07f;
 }
