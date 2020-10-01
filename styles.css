@@ -82,3 +82,12 @@ body {
 
   background: #ededed;
 }
+
+.box {
+  box-sizing: border-box;
+  height: 100px;
+  padding: 20px;
+
+  border: 10px solid red;
+  background: #000;
+}
